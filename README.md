@@ -4,7 +4,7 @@ A MATLAB package to handle reading and writing JSON files. The package consists 
 
 ## Motivation
 
-MATLAB introduced `jsonencode` and `jsondecode` which convert data from a struct to JSON string and back. But don't read data from a file. This package combines these two functions with `fread` to read and save JSON files.
+MATLAB introduced `jsonencode` and `jsondecode` which convert data from a struct to JSON string and back. However, these functions do not read data from JSON files. This package combines these two functions with `fread` to read and save JSON files.
 
 ## Examples
 
