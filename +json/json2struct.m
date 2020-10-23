@@ -12,12 +12,16 @@ function json_struct=json2struct(file_name)
 
 % Parse input and check that file exists
 p=inputParser;
-p.addRequired('file_name',@isfile);
+p.addRequired('file_name',@(f)exist(f,'file')==2);
 p.parse(file_name);
 
 fid=fopen(file_name);
 cln=onCleanup(@()fclose(fid));
 
 file_contents = fread(fid,[1 inf],'uint8=>char');
-json_struct = jsondecode(file_contents);
+try
+     json_struct = jsondecode(file_contents);
+catch 
+     error('json2struct:InvalidJSONdata',"File: '" + file_name +"' does not contain valid JSON");
+end
 
