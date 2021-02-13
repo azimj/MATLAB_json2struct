@@ -8,12 +8,6 @@ MATLAB introduced `jsonencode` and `jsondecode` which convert data from a struct
 
 ## Examples
 
-### Read data from a file
-
-```MATLAB
-data_struct=json.json2struct('test.json');
-```
-
 ### Write data to a file
 
 ```MATLAB
@@ -22,4 +16,11 @@ data_struct.Height=600;
 data_struct.Title='selected';
 data_struct.IDs=[1 2 3 4];
 json.struct2json(data_struct,'test.json');
+```
+
+### Read data from a file
+
+```MATLAB
+clearvars
+data_struct=json.json2struct('test.json');
 ```
