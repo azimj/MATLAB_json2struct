@@ -1,4 +1,4 @@
-# MATLAB_json2struct
+# MATLAB json2struct
 
 A MATLAB package to handle reading and writing JSON files. The package consists of two functions (`json2struct` and `struct2json`) which wrap the steps of opening a JSON file for reading or writing and interpreting the JSON content using MATLAB's `jsonencode` and `jsondecode`.
 
