@@ -1,3 +1,4 @@
+% json2struct and struct2json example
 %{
     Example of using the +json package to read from 
     and write to a JSON file.
