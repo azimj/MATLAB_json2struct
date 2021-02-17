@@ -24,3 +24,9 @@ json.struct2json(data_struct,'test.json');
 clearvars
 data_struct=json.json2struct('test.json');
 ```
+
+### Run tests
+
+```MATLAB
+runtests tests
+```
