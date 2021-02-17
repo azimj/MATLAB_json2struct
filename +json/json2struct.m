@@ -5,6 +5,8 @@ function json_struct=json2struct(file_name,varargin)
 %
 % S=JSON.JSON2STRUCT(FILE_NAME) Return all contents of the JSON file
 %
+% WARNING: row vectors (1xn) vectors will be read as a column (nx1).
+% 
 %
 % See also:
 %   jsondecode
@@ -34,6 +36,6 @@ catch
 end
 
 if isfield(json_struct,p.Results.element_name)
-    json_struct = json_struct.(p.Results.element_name);
+     json_struct = json_struct.(p.Results.element_name);
 end
 
