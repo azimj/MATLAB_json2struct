@@ -16,7 +16,7 @@ function json_struct=json2struct(file_name,varargin)
 
 % Change Log
 % 2021-02-17
-%   * Added optional parameter to extract a sub-structre
+%   * Added optional parameter to extract a sub-structure
 
 
 % Parse input and check that file exists
