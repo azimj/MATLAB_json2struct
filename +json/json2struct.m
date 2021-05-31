@@ -16,12 +16,13 @@ function json_struct=json2struct(file_name,varargin)
 
 % Change Log
 % 2021-02-17
-%   * Added optional parameter to extract a sub-structure
-
+%   * Added optional parameter to extract a sub-structre
+% 2021-05-30
+%    * simplified validation of file_name input
 
 % Parse input and check that file exists
 p=inputParser;
-p.addRequired('file_name',@(f)exist(f,'file')==2);
+p.addRequired('file_name',@isfile);
 p.addOptional('element_name','',@(s)isstring(s) || ischar(s));
 p.parse(file_name,varargin{:});
 
