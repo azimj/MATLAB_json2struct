@@ -1,13 +1,5 @@
 {
     "source": "custom",
-    "parameters":[{
-        "Width":100,
-        "Height":100,
-        "custom_field": "value 1"
-    },
-    {
-        "Width":200,
-        "Height":200,
-        "custom_field": "value 2"
-    }]
+    "param_b":"b2",
+    "param_c":"c2"
 }

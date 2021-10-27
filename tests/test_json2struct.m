@@ -43,6 +43,7 @@ end
 function test_load_customization(testCase)
     default_params=fullfile('..','default.json');
     custom_params = fullfile('..','test.json');
-    dat=json.load_parameter_file(default_params,custom_params);
-    
+    actual=json.load_parameter_file(default_params,custom_params);
+    expected=json.json2struct('expected.json');
+    testCase.assertEqual(actual,expected)
 end

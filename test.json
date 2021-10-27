@@ -1,12 +1,6 @@
 {
     "source": "test",
     "custom_parameters": "test_custom.json",
-    "parameters":[
-        {
-            "blockid": 1
-        },
-        {
-            "blockid": 2
-        }
-    ]
+    "param_a":"a1",
+    "param_b":"b1"
 }

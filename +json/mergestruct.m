@@ -26,7 +26,7 @@ src(2)="s2";
 if isfield(struct2,'source')
      src(2)=string(struct2.source);
 end
-final_struct.source=src.join('->');
+final_struct.source=char(src.join('->'));
 
 end
 
